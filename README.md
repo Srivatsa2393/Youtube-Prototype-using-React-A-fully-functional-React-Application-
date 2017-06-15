@@ -1,10 +1,4 @@
 
-### Getting Started
-
-> git clone https://github.com/Srivatsa2393/Youtube-Prototype-using-React-A-fully-functional-React-Application-.git
-> npm install
-> npm start
-```
 ![capture](https://user-images.githubusercontent.com/18416366/27176974-6f550942-51e2-11e7-9db3-4d18a69e5540.PNG)
 
 
