@@ -27,11 +27,15 @@ constructor(props){
   super(props);
 
   this.state = {
-    videos: []
+    videos: [],
+    selectedVideo: null
   };
 
   YTSearch({key: API_KEY, term: 'arsenal'}, (data) => {
-    this.setState({ videos: data });
+    this.setState({
+      videos: data,
+      selectedVideo: data[0]
+     });
   });
 
 }
@@ -40,8 +44,11 @@ constructor(props){
     return(
       <div>
         <SearchBar />
-        <VideoDetail video={this.state.videos[0]}/>
-        <VideoList videos= {this.state.videos} />
+        <VideoDetail video={this.state.selectedVideo}/>
+        <VideoList
+          onVideoSelect = {selectedVideo => this.setState({selectedVideo})}
+          videos= {this.state.videos}
+        />
       </div>
     );
   }
