@@ -8,7 +8,7 @@ const VideoList = (props) => {
       key={i}
       video={video}
       />
-  })
+  });
   return(
     <ul className="col-md-4 list-group">
       {videoItems}

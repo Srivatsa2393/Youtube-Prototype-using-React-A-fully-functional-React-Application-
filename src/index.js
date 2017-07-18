@@ -6,7 +6,7 @@ import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
 
-const API_KEY = '********************************';
+const API_KEY = 'AIzaSyBmumdbJlFFvGLr26RrdmjuRz4Cu21tLfg';
 
 //sample search
 // YTSearch({key: API_KEY, term: 'surfboards'}, function(data){
